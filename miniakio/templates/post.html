@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}{{post.title}} - {{escape(context.sitename)}}{% end %}
+{% block head %}{{strip_tags(post.content[0:168])}}{% end %}
+{% block content %}
+<article>
+    {% if context.is_mobile %}
+    <div class="post-meta">
+        <h2><a href="/post/{{post.id}}">{{post.id}}</a></h2>
+        <span>{{post.published}}</span>
+    </div>
+    {% else %}
+    <h2>
+        <a href="/post/{{post.id}}">{{post.title}}</a>
+        <small class="date-right">{{post.published}}</small>
+    </h2>
+    {% end %}
+    {{post.content}}
+</article>
+
+<div class="tag-list">Tags:
+    {% for tag in tags%}
+    <a href="/tag/{{tag}}">#{{tag}}</a>
+    {% end %}&#160;&#160; Post on <a href="/category/{{post.category}}">{{post.category}}</a>
+    {% if current_user %}
+    |<a href="/post/update/{{post.id}}">Update</a>
+    <a href="/post/delete/{{post.id}}?check={{signer}}">Del</a>
+    {% end %}
+</div>
+
+<div id="SOHUCS" sid="{{post.id}}"></div>
+<script>
+  (function(){
+    var appid = 'cyrA8Yt8P',
+    conf = 'prod_cf9b6e962057e4a4e9e04bd8bab83115';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
+</script>
+
+<div class="navigation clearfix">
+    上一篇:
+    {% if next_prev["next"] %}
+    <a href="/post/{{next_prev['next'].id}}" title="{{next_prev['next'].title}}" class="previous">
+    {{next_prev["next"].title}}
+    </a>
+    {% else %}
+    没有了
+    {% end %}
+
+    {% if context.is_mobile %}
+    <br /><br />
+    {% end %}
+
+    <span class="next"> 
+    {% if next_prev["prev"] %}
+    下一篇:
+    <a href="/post/{{next_prev['prev'].id}}" title="{{next_prev['prev'].title}}">
+    {{next_prev["prev"].title}}
+        </a>
+    {% else %}
+    没有了
+    {%end %}
+    </span>
+</div>
+{% end%}
+
+{% block nav %}
+
+{% end %}

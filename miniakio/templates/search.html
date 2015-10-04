@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Search - {{escape(context.sitename)}}{% end %}
+{% block content %}
+<h2>Search</h2>
+<section>
+<script type="text/javascript">document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E%3Cscript charset="utf-8" src="http://znsv.baidu.com/customer_search/api/js?sid=17779597642126405009') + '&plate_url=' + (encodeURIComponent(window.location.href)) + '&t=' + (Math.ceil(new Date()/3600000)) + unescape('"%3E%3C/script%3E'));</script>
+</section>
+<hr>
+<blockquote>
+    <small>Powered by Baidu</small>
+</blockquote>
+{% end %}

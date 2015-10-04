@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}{{escape(context.sitename)}}{% end %}</title>
+    <meta name="author" content="Sanyang">
+    <meta name="description" content="{% block head %}Sanyang's Blog,Please Call me Sanyang Wang.{% end %}" />
+    <link rel="shortcut icon" type="image/ico" href="/static/favicon.ico">
+    <link href="/blog/feed" rel="alternate" type="application/atom+xml">
+    <link href="{{static_url('style/style.min.css')}}" rel="stylesheet" type="text/css" media="all">
+    {% if context.is_mobile %}
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0" name="viewport" />
+    <link href="{{static_url('style/mobile.css')}}" rel="stylesheet" type="text/css" media="all">
+    {% end %}
+    <link href="{{static_url('style/solarized.css')}}" rel="stylesheet" type="text/css">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?09112f7ee3c4ca88a42ff340f4c5ec69";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"right","bdTop":"100"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+  </head>
+
+  <body>
+    <img class='bg-image' src="{{static_url('bg.jpg')}}" />
+    {% if not context.is_mobile %}
+    <header id="header" class="clearfix header-fixed-top">
+      <div class="nav">
+        <h1><a href="/">{{escape(context.sitename)}}</a></h1>
+        <ul>
+            <li><a href="/picky/about-me">我是谁</a></li>
+            <li><a href="/picky/all">知识库</a></li>
+            <li><a href="/blog/all">随记</a></li>
+            <li><a href="/picky/links">网摘</a></li>
+            <li><a href="/blog/tags">标签</a></li>
+            <li><a href="/search/all">搜索</a></li>
+        </ul>
+      </div>
+    </header>
+    {% end %}
+
+    <div id="container">
+      {% if context.is_mobile %}
+      <header id="mobile-header" class="clearfix">
+        <h1><a href="/">{{escape(context.sitename)}}</a></h1>
+        <ul>
+          <li><a href="/picky/about-me">About</a></li>
+          <li><a href="/picky/all">Picky</a></li>
+          <li><a href="/picky/links">Link</a></li>
+          <li><a href="/blog/all">Archive</a></li>
+          <li><a href="/blog/tags">Tags</a></li>
+          <li><a href="/search/all">Search</a></li>
+        </ul>
+      </header>
+      {% end %}
+      <div id="main" class="clearfix">
+        <div class="content clearfix">
+        {% block content %}{% end %}
+        </div>
+        {% block nav %}{% end %}
+      </div>
+
+      <footer id="footer" class="top-box clearfix">
+        &copy; 2011-2015  | <a href="/" title="By Sanyang">Sanyang's Blog</a> with
+        <a href="https://github.com/sniperyen"> Sniperyen</a>.
+        <a href="javascript:scroll(0,0)" class="to-top">TOP</a>
+      </footer>
+      {% block bottom %}
+      
+      {% end %}
+    </div>
+  </body>
+</html>

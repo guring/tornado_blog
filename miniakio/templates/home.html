@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{escape(context.sitename)}}</title>
+    <meta name="author" content="Sanyang">
+    <meta name="description" content="Sanyang's Blog,Please Call me jingshenbing." />
+    <link rel="shortcut icon" type="image/ico" href="/static/favicon.ico">
+    <meta name="baidu-site-verification" content="COBKfujZJ8" />
+    <link href="/blog/feed" rel="alternate" type="application/atom+xml">
+    <link href="{{static_url('style/style.min.css')}}" rel="stylesheet" type="text/css" media="all">
+    <link href="{{static_url('style/solarized.css')}}" rel="stylesheet" type="text/css">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?09112f7ee3c4ca88a42ff340f4c5ec69";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"right","bdTop":"100"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>  </head>
+
+  <body>
+    <img class='bg-image' src="{{static_url('bg.jpg')}}" />
+    <header id="header" class="clearfix header-fixed-top">
+      <div class="nav">
+        <h1><a href="/">{{escape(context.sitename)}}</a></h1>
+        <ul>
+            <li><a href="/picky/about-me">我是谁</a></li>
+            <li><a href="/picky/all">知识库</a></li>
+            <li><a href="/blog/all">随记</a></li>
+            <li><a href="/picky/links">网摘</a></li>
+            <li><a href="/blog/tags">标签</a></li>
+            <li><a href="/search/all">搜索</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div id="home-container">
+      <div class="curtain">
+        <div class="avater">
+          <a href="/picky/about-me">
+            <img src="{{static_url('avater.png')}}"/>
+          </a>
+        </div>
+        <h2>Recent Post</h2>
+        <ul class="home-list">
+          {% for post in posts %}
+          <li>
+            <span>{{get_show_time(post.published)}}</span> &raquo; 
+            <a href="/post/{{post.id}}">{{post.title}}</a>
+          </li>
+          {% end %}
+        </ul>
+        <div class="footer">
+          &copy; 2011-2015  | <a href="/picky/about-blog" title="By Sanyang">Sanyang's Blog</a> with
+        <a href="https://github.com/sniperyen"> Sniperyen</a>.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

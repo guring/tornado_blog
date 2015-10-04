@@ -1,0 +1,1221 @@
+[I 140726 13:59:04 web:1811] 200 GET /blog/tags (182.92.158.67) 12.17ms
+[I 140726 13:59:58 web:1811] 304 GET /blog/tags (182.92.158.67) 11.66ms
+[I 140726 13:59:59 web:1811] 304 GET /blog/tags (182.92.158.67) 1.01ms
+[I 140726 13:59:59 web:1811] 304 GET /blog/tags (182.92.158.67) 1.15ms
+[I 140726 14:00:01 web:1811] 304 GET /blog/tags (182.92.158.67) 1.38ms
+[I 140726 14:01:21 web:1811] 304 GET /picky/links (182.92.158.67) 5.92ms
+[I 140726 14:01:23 web:1811] 304 GET /picky/all (182.92.158.67) 5.13ms
+[I 140726 14:01:24 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.77ms
+[I 140726 14:01:25 web:1811] 304 GET /picky/all (182.92.158.67) 1.41ms
+[I 140726 14:01:26 web:1811] 304 GET /picky/links (182.92.158.67) 1.51ms
+[I 140726 14:01:30 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.70ms
+[I 140726 14:01:31 web:1811] 304 GET / (182.92.158.67) 3.22ms
+[I 140726 14:02:06 web:1811] 304 GET / (182.92.158.67) 3.41ms
+[I 140726 14:02:11 web:1811] 304 GET / (182.92.158.67) 1.18ms
+[I 140726 14:03:10 web:1811] 304 GET /picky/all (182.92.158.67) 1.38ms
+[I 140726 14:04:44 web:1811] 304 GET /blog/tags (182.92.158.67) 1.09ms
+[I 140726 14:04:45 web:1811] 304 GET /blog/all (182.92.158.67) 5.69ms
+[I 140726 14:04:46 web:1811] 304 GET /picky/all (182.92.158.67) 1.34ms
+[I 140726 14:11:40 web:1811] 304 GET /picky/all (182.92.158.67) 1.38ms
+[I 140726 14:14:30 web:1811] 304 GET /picky/all (182.92.158.67) 1.37ms
+[I 140726 14:14:34 web:1811] 304 GET / (182.92.158.67) 1.13ms
+[I 140726 14:14:37 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.71ms
+[I 140726 14:14:57 web:1811] 304 GET /picky/links (182.92.158.67) 1.66ms
+[I 140726 14:14:58 web:1811] 304 GET /blog/all (182.92.158.67) 5.71ms
+[I 140726 14:15:00 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.64ms
+[I 140726 14:15:08 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.60ms
+[I 140726 14:15:10 web:1811] 304 GET / (182.92.158.67) 1.09ms
+[I 140726 14:18:24 web:1811] 304 GET /picky/links (182.92.158.67) 1.80ms
+[I 140726 14:18:57 web:1811] 304 GET /blog/all (182.92.158.67) 1.07ms
+[I 140726 14:18:59 web:1811] 304 GET /blog/tags (182.92.158.67) 1.08ms
+[I 140726 14:19:00 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.67ms
+[I 140726 14:19:02 web:1811] 304 GET / (182.92.158.67) 1.28ms
+[I 140726 14:19:04 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.67ms
+[I 140726 14:24:31 web:1811] 304 GET / (182.92.158.67) 1.16ms
+[I 140726 14:28:32 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.73ms
+[I 140726 14:28:37 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.65ms
+[E 140726 14:36:12 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='www.woshijingshenbing.com', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '42.120.145.30', 'Host': 'www.woshijingshenbing.com', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 14:36:12 web:1811] 500 GET / (182.92.158.67) 2.37ms
+[I 140726 14:38:11 web:1811] 200 GET / (182.92.158.67) 10.74ms
+[I 140726 14:40:01 web:1811] 200 GET /blog/all (182.92.158.67) 1.52ms
+[I 140726 14:40:07 web:1811] 304 GET /blog/all (182.92.158.67) 1.11ms
+[I 140726 14:40:10 web:1811] 200 GET /picky/links (182.92.158.67) 1.87ms
+[I 140726 14:40:13 web:1811] 200 GET /picky/all (182.92.158.67) 1.65ms
+[I 140726 14:40:22 web:1811] 304 GET / (182.92.158.67) 4.77ms
+[E 140726 14:42:38 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '222.214.23.134', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 14:42:38 web:1811] 500 GET / (182.92.158.67) 2.32ms
+[I 140726 14:43:01 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.78ms
+[I 140726 14:45:42 web:1811] 200 GET /picky/about-me.md (182.92.158.67) 0.61ms
+[E 140726 14:54:54 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '182.131.121.226', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 14:54:54 web:1811] 500 GET / (182.92.158.67) 2.29ms
+[E 140726 15:09:02 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '106.127.139.201', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 15:09:02 web:1811] 500 GET / (182.92.158.67) 1.92ms
+[I 140726 15:21:26 web:1811] 200 GET /picky/about-me (182.92.158.67) 2.11ms
+[I 140726 15:21:56 web:1811] 200 GET /picky/about-me (182.92.158.67) 2.15ms
+[I 140726 15:30:22 web:1811] 200 GET /picky/about-me (182.92.158.67) 1.94ms
+[I 140726 15:41:55 web:1811] 304 GET / (182.92.158.67) 1.16ms
+[I 140726 15:42:06 web:1811] 304 GET /picky/all (182.92.158.67) 1.46ms
+[I 140726 15:42:13 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.77ms
+[I 140726 15:45:11 web:1811] 200 GET /picky/about-me (182.92.158.67) 1.96ms
+[I 140726 15:45:55 web:1811] 200 GET /picky/about-me (182.92.158.67) 1.89ms
+[I 140726 15:46:01 web:1811] 304 GET /picky/all (182.92.158.67) 1.48ms
+[I 140726 15:46:04 web:1811] 304 GET /picky/links (182.92.158.67) 1.78ms
+[I 140726 15:46:13 web:1811] 200 GET /blog/all (182.92.158.67) 1.35ms
+[I 140726 15:46:15 web:1811] 304 GET /blog/tags (182.92.158.67) 1.15ms
+[I 140726 15:46:16 web:1811] 304 GET /search/all (182.92.158.67) 3.58ms
+[I 140726 15:46:18 web:1811] 304 GET /picky/about-me (182.92.158.67) 3.33ms
+[I 140726 15:50:11 web:1811] 200 GET /picky/about-me (182.92.158.67) 2.40ms
+[I 140726 15:50:32 web:1811] 304 GET /picky/about-me (182.92.158.67) 2.29ms
+[I 140726 15:50:35 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.74ms
+[I 140726 15:50:49 web:1811] 200 GET /picky/about-me (182.92.158.67) 2.89ms
+[E 140726 15:52:44 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '118.118.92.247', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 15:52:44 web:1811] 500 GET / (182.92.158.67) 3.61ms
+[I 140726 15:52:50 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.70ms
+[I 140726 15:53:38 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.86ms
+[I 140726 15:53:41 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.66ms
+[I 140726 15:53:55 web:1811] 200 GET /picky/about-me (182.92.158.67) 1.90ms
+[I 140726 15:54:26 web:1811] 200 GET /picky/all (182.92.158.67) 1.64ms
+[I 140726 15:54:28 web:1811] 200 GET /picky/links (182.92.158.67) 1.88ms
+[I 140726 15:54:31 web:1811] 200 GET /blog/all (182.92.158.67) 1.40ms
+[I 140726 15:54:32 web:1811] 200 GET /blog/tags (182.92.158.67) 1.29ms
+[W 140726 15:54:39 web:1811] 404 GET /picky/about-blog (182.92.158.67) 0.58ms
+[I 140726 15:54:45 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.72ms
+[W 140726 15:54:50 web:1811] 404 GET /picky/about-blog (182.92.158.67) 0.64ms
+[I 140726 15:55:39 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.81ms
+[I 140726 15:55:46 web:1811] 200 GET / (182.92.158.67) 1.27ms
+[E 140726 15:57:09 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '125.73.159.240', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 15:57:09 web:1811] 500 GET / (182.92.158.67) 2.33ms
+[I 140726 15:57:22 web:1811] 304 GET / (182.92.158.67) 1.49ms
+[I 140726 15:57:28 web:1811] 304 GET /picky/all (182.92.158.67) 1.57ms
+[I 140726 15:57:32 web:1811] 304 GET /picky/all (182.92.158.67) 1.44ms
+[I 140726 15:57:42 web:1811] 200 GET /picky/all (182.92.158.67) 1.60ms
+[I 140726 15:57:45 web:1811] 304 GET /picky/all (182.92.158.67) 1.47ms
+[I 140726 15:57:47 web:1811] 200 GET /picky/links (182.92.158.67) 3.18ms
+[I 140726 15:58:35 web:1811] 304 GET /picky/links (182.92.158.67) 1.64ms
+[I 140726 15:58:38 web:1811] 200 GET / (182.92.158.67) 1.31ms
+[I 140726 15:58:46 web:1811] 200 GET /picky/about-me (182.92.158.67) 2.07ms
+[I 140726 15:58:53 web:1811] 200 GET / (182.92.158.67) 1.25ms
+[I 140726 15:58:54 web:1811] 200 GET / (182.92.158.67) 0.94ms
+[I 140726 15:59:36 web:1811] 200 GET / (182.92.158.67) 1.20ms
+[I 140726 15:59:40 web:1811] 304 GET / (182.92.158.67) 1.15ms
+[I 140726 15:59:47 web:1811] 200 GET /blog/all (182.92.158.67) 1.11ms
+[I 140726 15:59:47 web:1811] 200 GET /blog/all (182.92.158.67) 1.59ms
+[I 140726 15:59:50 web:1811] 200 GET /blog/all (182.92.158.67) 0.98ms
+[I 140726 16:01:15 web:1811] 200 GET / (182.92.158.67) 1.24ms
+[I 140726 16:01:38 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.83ms
+[I 140726 16:02:41 web:1811] 200 GET /picky/about-me (182.92.158.67) 1.81ms
+[I 140726 16:03:17 web:1811] 200 GET /picky/all (182.92.158.67) 2.11ms
+[I 140726 16:03:28 web:1811] 200 GET /picky/all.md (182.92.158.67) 0.62ms
+[I 140726 16:03:30 web:1811] 200 GET /picky/links (182.92.158.67) 2.31ms
+[I 140726 16:03:41 web:1811] 200 GET /blog/all (182.92.158.67) 1.37ms
+[I 140726 16:03:42 web:1811] 200 GET /blog/all (182.92.158.67) 1.37ms
+[I 140726 16:03:42 web:1811] 200 GET /blog/tags (182.92.158.67) 1.27ms
+[I 140726 16:03:43 web:1811] 304 GET /picky/all (182.92.158.67) 1.47ms
+[I 140726 16:04:34 web:1811] 200 GET /picky/all (182.92.158.67) 2.35ms
+[I 140726 16:04:42 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.74ms
+[I 140726 16:04:43 web:1811] 304 GET /picky/all (182.92.158.67) 1.44ms
+[I 140726 16:04:44 web:1811] 304 GET /picky/links (182.92.158.67) 1.79ms
+[I 140726 16:04:45 web:1811] 304 GET /blog/all (182.92.158.67) 1.18ms
+[I 140726 16:04:46 web:1811] 304 GET / (182.92.158.67) 1.18ms
+[I 140726 16:04:54 web:1811] 304 GET /blog/tags (182.92.158.67) 1.28ms
+[I 140726 16:04:55 web:1811] 200 GET /search/all (182.92.158.67) 1.13ms
+[I 140726 16:04:57 web:1811] 304 GET / (182.92.158.67) 1.19ms
+[I 140726 16:06:00 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.65ms
+[I 140726 16:06:01 web:1811] 304 GET /picky/all (182.92.158.67) 1.43ms
+[I 140726 16:06:02 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.63ms
+[I 140726 16:06:03 web:1811] 304 GET /picky/all (182.92.158.67) 1.47ms
+[I 140726 16:06:04 web:1811] 304 GET /picky/links (182.92.158.67) 2.19ms
+[I 140726 16:06:04 web:1811] 304 GET /blog/all (182.92.158.67) 1.18ms
+[I 140726 16:06:05 web:1811] 304 GET /blog/tags (182.92.158.67) 1.22ms
+[I 140726 16:06:06 web:1811] 304 GET /search/all (182.92.158.67) 4.15ms
+[I 140726 16:06:07 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.68ms
+[I 140726 16:06:08 web:1811] 304 GET / (182.92.158.67) 1.19ms
+[I 140726 16:06:19 web:1811] 304 GET /picky/all (182.92.158.67) 1.41ms
+[I 140726 16:06:20 web:1811] 304 GET /picky/links (182.92.158.67) 1.80ms
+[I 140726 16:06:57 web:1811] 304 GET / (182.92.158.67) 1.10ms
+[I 140726 16:10:09 web:1811] 200 GET / (182.92.158.67) 1.30ms
+[I 140726 16:10:37 web:1811] 304 GET /picky/links (182.92.158.67) 1.79ms
+[I 140726 16:10:38 web:1811] 304 GET /blog/all (182.92.158.67) 1.22ms
+[I 140726 16:10:41 web:1811] 200 GET /search/all (182.92.158.67) 1.10ms
+[I 140726 16:10:48 web:1811] 200 GET /picky/about-me (182.92.158.67) 1.84ms
+[I 140726 16:11:06 web:1811] 200 GET / (182.92.158.67) 1.20ms
+[I 140726 16:11:06 web:1811] 200 GET / (182.92.158.67) 0.97ms
+[I 140726 16:11:06 web:1811] 200 GET / (182.92.158.67) 1.01ms
+[I 140726 16:11:06 web:1811] 200 GET / (182.92.158.67) 2.57ms
+[I 140726 16:11:06 web:1811] 200 GET / (182.92.158.67) 2.14ms
+[I 140726 16:11:07 web:1811] 200 GET / (182.92.158.67) 1.12ms
+[I 140726 16:11:07 web:1811] 200 GET / (182.92.158.67) 1.04ms
+[I 140726 16:11:07 web:1811] 200 GET / (182.92.158.67) 1.14ms
+[I 140726 16:11:07 web:1811] 200 GET / (182.92.158.67) 1.04ms
+[I 140726 16:11:16 web:1811] 200 GET /picky/about-me (182.92.158.67) 1.59ms
+[I 140726 16:11:17 web:1811] 200 GET /picky/about-me (182.92.158.67) 1.80ms
+[I 140726 16:11:17 web:1811] 200 GET /picky/about-me (182.92.158.67) 1.82ms
+[I 140726 16:11:31 web:1811] 200 GET /picky/all (182.92.158.67) 1.36ms
+[I 140726 16:11:31 web:1811] 200 GET /picky/all (182.92.158.67) 1.49ms
+[I 140726 16:11:31 web:1811] 200 GET /picky/all (182.92.158.67) 1.54ms
+[I 140726 16:11:39 web:1811] 200 GET /picky/links (182.92.158.67) 1.89ms
+[I 140726 16:11:39 web:1811] 200 GET /picky/links (182.92.158.67) 1.61ms
+[I 140726 16:11:40 web:1811] 200 GET /picky/links (182.92.158.67) 1.85ms
+[I 140726 16:11:48 web:1811] 304 GET / (182.92.158.67) 1.34ms
+[I 140726 16:12:58 web:1811] 304 GET / (182.92.158.67) 1.16ms
+[I 140726 16:15:35 web:1811] 200 GET / (182.92.158.67) 1.21ms
+[I 140726 16:15:39 web:1811] 200 GET /picky/all (182.92.158.67) 1.48ms
+[I 140726 16:15:40 web:1811] 200 GET /blog/all (182.92.158.67) 1.48ms
+[I 140726 16:15:41 web:1811] 200 GET /picky/links (182.92.158.67) 1.88ms
+[I 140726 16:15:42 web:1811] 200 GET /blog/tags (182.92.158.67) 1.30ms
+[I 140726 16:15:42 web:1811] 200 GET /search/all (182.92.158.67) 1.14ms
+[I 140726 16:15:46 web:1811] 200 GET / (182.92.158.67) 1.37ms
+[I 140726 16:16:21 web:1811] 200 GET /picky/about-me (182.92.158.67) 1.85ms
+[I 140726 16:16:56 web:1811] 200 GET / (182.92.158.67) 7.95ms
+[W 140726 16:17:03 web:1811] 404 GET /picky/aboutme (182.92.158.67) 1.97ms
+[I 140726 16:17:27 web:1811] 304 GET / (182.92.158.67) 1.15ms
+[I 140726 16:17:28 web:1811] 200 GET / (182.92.158.67) 6.76ms
+[I 140726 16:17:33 web:1811] 200 GET /picky/about-me (182.92.158.67) 9.94ms
+[I 140726 16:17:52 web:1811] 200 GET /blog/all (182.92.158.67) 8.55ms
+[I 140726 16:18:23 web:1811] 200 GET /picky/about-me (182.92.158.67) 1.81ms
+[I 140726 16:18:26 web:1811] 200 GET /picky/about-me (182.92.158.67) 5.48ms
+[I 140726 16:21:31 web:1811] 200 GET / (182.92.158.67) 1.54ms
+[I 140726 16:21:43 web:1811] 200 GET /picky/about-me (182.92.158.67) 1.89ms
+[I 140726 16:21:47 web:1811] 200 GET /picky/all (182.92.158.67) 1.74ms
+[I 140726 16:21:49 web:1811] 200 GET /picky/links (182.92.158.67) 2.01ms
+[I 140726 16:21:50 web:1811] 304 GET /picky/all (182.92.158.67) 1.50ms
+[I 140726 16:21:52 web:1811] 304 GET /picky/links (182.92.158.67) 1.75ms
+[I 140726 16:21:54 web:1811] 200 GET /blog/all (182.92.158.67) 9.19ms
+[I 140726 16:21:57 web:1811] 200 GET /blog/tags (182.92.158.67) 4.65ms
+[W 140726 17:03:41 web:1811] 404 GET /manager/html (182.92.158.67) 0.56ms
+[E 140726 17:23:15 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '106.91.30.252', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 17:23:15 web:1811] 500 GET / (182.92.158.67) 2.09ms
+[E 140726 17:50:58 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '123.246.138.218', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 17:50:58 web:1811] 500 GET / (182.92.158.67) 2.45ms
+[E 140726 18:02:50 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '222.246.98.14', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 18:02:50 web:1811] 500 GET / (182.92.158.67) 1.09ms
+[I 140726 19:10:06 web:1811] 200 GET / (182.92.158.67) 5.29ms
+[I 140726 19:10:17 web:1811] 200 GET /search/all (182.92.158.67) 3.80ms
+[I 140726 19:10:17 web:1811] 200 GET /search/all (182.92.158.67) 3.26ms
+[I 140726 19:10:17 web:1811] 200 GET /search/all (182.92.158.67) 1.07ms
+[E 140726 19:11:11 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '180.141.201.38', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 19:11:11 web:1811] 500 GET / (182.92.158.67) 2.27ms
+[I 140726 19:16:38 web:1811] 200 GET / (182.92.158.67) 1.16ms
+[I 140726 19:17:23 web:1811] 200 GET / (182.92.158.67) 1.79ms
+[E 140726 19:53:03 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '118.113.23.99', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 19:53:03 web:1811] 500 GET / (182.92.158.67) 2.71ms
+[I 140726 19:54:58 web:1811] 200 GET / (182.92.158.67) 1.20ms
+[I 140726 19:54:58 web:1811] 200 GET / (182.92.158.67) 1.24ms
+[I 140726 19:54:58 web:1811] 200 GET / (182.92.158.67) 0.83ms
+[I 140726 20:27:39 web:1811] 200 GET / (182.92.158.67) 1.17ms
+[I 140726 20:28:10 web:1811] 200 GET / (182.92.158.67) 1.26ms
+[I 140726 20:28:28 web:1811] 200 GET /picky/about-me (182.92.158.67) 1.84ms
+[I 140726 20:28:40 web:1811] 200 GET /picky/all (182.92.158.67) 1.51ms
+[I 140726 20:28:43 web:1811] 200 GET /picky/links (182.92.158.67) 1.85ms
+[I 140726 20:28:46 web:1811] 200 GET /picky/links (182.92.158.67) 1.87ms
+[I 140726 20:28:52 web:1811] 200 GET /blog/all (182.92.158.67) 1.25ms
+[I 140726 20:29:02 web:1811] 200 GET /search/all (182.92.158.67) 1.27ms
+[I 140726 20:29:10 web:1811] 200 GET /picky/links (182.92.158.67) 1.96ms
+[E 140726 20:41:31 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '113.14.17.59', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 20:41:31 web:1811] 500 GET / (182.92.158.67) 2.03ms
+[E 140726 22:34:03 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '110.153.148.58', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 22:34:03 web:1811] 500 GET / (182.92.158.67) 1.37ms
+[E 140726 22:54:46 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '218.95.144.63', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 22:54:46 web:1811] 500 GET / (182.92.158.67) 2.06ms
+[E 140726 23:32:10 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '182.149.151.180', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140726 23:32:10 web:1811] 500 GET / (182.92.158.67) 1.09ms
+[E 140727 00:31:47 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '81.215.198.189', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 00:31:47 web:1811] 500 GET / (182.92.158.67) 1.40ms
+[E 140727 01:36:47 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '222.183.155.88', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 01:36:47 web:1811] 500 GET / (182.92.158.67) 1.48ms
+[E 140727 01:47:47 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '116.11.212.13', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 01:47:47 web:1811] 500 GET / (182.92.158.67) 1.10ms
+[E 140727 02:26:10 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '218.70.226.173', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 02:26:10 web:1811] 500 GET / (182.92.158.67) 1.53ms
+[W 140727 02:29:29 web:1811] 404 GET http://www.soso.com/ (60.173.8.240) 0.53ms
+[E 140727 03:03:33 web:1407] Uncaught exception GET /index.asp?request=Ch&index=0 (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/index.asp?request=Ch&index=0', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '95.211.138.10', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 03:03:33 web:1811] 500 GET /index.asp?request=Ch&index=0 (182.92.158.67) 1.44ms
+[E 140727 03:38:41 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '1.81.210.246', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 03:38:41 web:1811] 500 GET / (182.92.158.67) 1.40ms
+[E 140727 03:52:12 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '222.94.206.141', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 03:52:12 web:1811] 500 GET / (182.92.158.67) 1.04ms
+[E 140727 03:59:45 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '114.239.164.99', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 03:59:45 web:1811] 500 GET / (182.92.158.67) 1.03ms
+[E 140727 04:25:41 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '171.112.120.121', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 04:25:41 web:1811] 500 GET / (182.92.158.67) 2.75ms
+[E 140727 04:51:14 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '182.140.12.103', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 04:51:14 web:1811] 500 GET / (182.92.158.67) 1.07ms
+[E 140727 05:23:02 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '111.181.211.29', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 05:23:02 web:1811] 500 GET / (182.92.158.67) 1.51ms
+[E 140727 05:34:25 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '222.213.183.16', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 05:34:25 web:1811] 500 GET / (182.92.158.67) 1.12ms
+[E 140727 06:00:21 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '118.119.135.83', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 06:00:21 web:1811] 500 GET / (182.92.158.67) 1.47ms
+[E 140727 06:14:29 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '218.91.125.148', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 06:14:29 web:1811] 500 GET / (182.92.158.67) 1.41ms
+[E 140727 06:51:38 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '110.186.23.121', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 06:51:38 web:1811] 500 GET / (182.92.158.67) 1.37ms
+[E 140727 07:29:13 web:1407] Uncaught exception GET /usage_https/ (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='GET', uri='/usage_https/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '93.174.95.55', 'Connection': 'close', 'X-Scheme': 'http'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 07:29:13 web:1811] 500 GET /usage_https/ (182.92.158.67) 1.39ms
+[E 140727 08:36:09 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '116.8.49.238', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 08:36:09 web:1811] 500 GET / (182.92.158.67) 1.49ms
+[E 140727 09:00:29 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '171.105.254.8', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 09:00:29 web:1811] 500 GET / (182.92.158.67) 1.98ms
+[I 140727 10:07:44 web:1811] 200 GET / (182.92.158.67) 1.34ms
+[I 140727 10:07:57 web:1811] 200 GET /picky/about-me (182.92.158.67) 1.96ms
+[I 140727 10:08:43 web:1811] 200 GET /picky/all (182.92.158.67) 1.48ms
+[I 140727 10:10:01 web:1811] 200 GET /picky/all.md (182.92.158.67) 0.62ms
+[I 140727 10:10:05 web:1811] 200 GET /picky/links (182.92.158.67) 1.90ms
+[I 140727 10:49:28 web:1811] 200 GET / (182.92.158.67) 1.28ms
+[I 140727 10:49:35 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.66ms
+[E 140727 11:49:03 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '117.70.169.201', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 11:49:03 web:1811] 500 GET / (182.92.158.67) 2.37ms
+[E 140727 11:51:41 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '182.137.232.162', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 11:51:41 web:1811] 500 GET / (182.92.158.67) 2.01ms
+[E 140727 12:05:53 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '121.62.195.212', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 12:05:53 web:1811] 500 GET / (182.92.158.67) 1.44ms
+[E 140727 12:32:32 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '118.120.92.242', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 12:32:32 web:1811] 500 GET / (182.92.158.67) 1.06ms
+[E 140727 12:47:03 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '117.87.194.152', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 12:47:03 web:1811] 500 GET / (182.92.158.67) 1.38ms
+[E 140727 12:48:17 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '111.172.184.43', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 12:48:17 web:1811] 500 GET / (182.92.158.67) 1.08ms
+[I 140727 14:05:56 web:1811] 301 GET /HNAP1/ (182.92.158.67) 0.58ms
+[E 140727 15:11:46 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '139.205.103.79', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 15:11:46 web:1811] 500 GET / (182.92.158.67) 1.22ms
+[E 140727 15:49:14 web:1407] Uncaught exception HEAD / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='127.0.0.1', method='HEAD', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '82.221.109.194', 'Connection': 'close', 'X-Scheme': 'http'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 15:49:14 web:1811] 500 HEAD / (182.92.158.67) 1.33ms
+[E 140727 15:57:33 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '125.68.176.192', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 15:57:33 web:1811] 500 GET / (182.92.158.67) 1.94ms
+[E 140727 16:31:17 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '116.252.10.75', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 16:31:17 web:1811] 500 GET / (182.92.158.67) 1.35ms
+[E 140727 16:35:33 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '116.11.178.65', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 16:35:33 web:1811] 500 GET / (182.92.158.67) 1.60ms
+[I 140727 16:47:34 web:1811] 200 GET / (182.92.158.67) 1.30ms
+[W 140727 17:19:54 web:1811] 404 GET /manager/html (182.92.158.67) 0.53ms
+[E 140727 17:33:55 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '218.3.199.44', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 17:33:55 web:1811] 500 GET / (182.92.158.67) 2.21ms
+[E 140727 17:49:04 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '222.210.212.146', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 17:49:04 web:1811] 500 GET / (182.92.158.67) 1.09ms
+[E 140727 17:53:44 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '180.143.178.177', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 17:53:44 web:1811] 500 GET / (182.92.158.67) 1.38ms
+[E 140727 17:56:55 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '1.84.106.9', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 17:56:55 web:1811] 500 GET / (182.92.158.67) 1.09ms
+[E 140727 18:05:53 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '220.173.59.206', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 18:05:53 web:1811] 500 GET / (182.92.158.67) 1.44ms
+[E 140727 18:19:39 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '113.16.107.189', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 18:19:39 web:1811] 500 GET / (182.92.158.67) 1.36ms
+[E 140727 19:00:36 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '222.216.46.45', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 19:00:36 web:1811] 500 GET / (182.92.158.67) 1.43ms
+[E 140727 19:32:10 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '93.120.27.62', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close', 'Accept-Encoding': 'identity'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 19:32:10 web:1811] 500 GET / (182.92.158.67) 2.00ms
+[E 140727 19:48:28 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '114.236.28.118', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 19:48:28 web:1811] 500 GET / (182.92.158.67) 1.88ms
+[E 140727 20:15:50 web:1407] Uncaught exception GET /manager/html (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/manager/html', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'Connection': 'close', 'Accept-Encoding': 'gzip, deflate', 'X-Real-Ip': '193.108.160.213', 'X-Scheme': 'http', 'Host': '182.92.158.67', 'Authorization': 'Basic YWRtaW46'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 20:15:50 web:1811] 500 GET /manager/html (182.92.158.67) 1.11ms
+[W 140727 20:26:07 web:1811] 404 GET http://www.soso.com/ (60.173.8.240) 0.83ms
+[E 140727 20:45:19 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '111.113.227.26', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 20:45:19 web:1811] 500 GET / (182.92.158.67) 1.63ms
+[E 140727 21:05:03 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '171.215.151.207', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 21:05:03 web:1811] 500 GET / (182.92.158.67) 1.10ms
+[E 140727 21:13:09 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '27.159.255.156', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 21:13:09 web:1811] 500 GET / (182.92.158.67) 2.14ms
+[E 140727 21:19:59 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '171.106.13.43', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 21:19:59 web:1811] 500 GET / (182.92.158.67) 1.37ms
+[E 140727 21:37:21 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '119.99.76.126', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 21:37:21 web:1811] 500 GET / (182.92.158.67) 1.61ms
+[E 140727 22:42:57 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '27.22.193.150', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140727 22:42:57 web:1811] 500 GET / (182.92.158.67) 1.10ms
+[E 140728 00:53:54 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '94.26.21.176', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 00:53:54 web:1811] 500 GET / (182.92.158.67) 1.40ms
+[E 140728 01:32:08 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '114.225.3.88', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 01:32:08 web:1811] 500 GET / (182.92.158.67) 1.38ms
+[E 140728 01:34:51 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '124.227.142.81', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 01:34:51 web:1811] 500 GET / (182.92.158.67) 1.12ms
+[E 140728 02:00:51 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '171.104.183.35', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 02:00:51 web:1811] 500 GET / (182.92.158.67) 1.42ms
+[E 140728 02:22:10 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '171.106.72.132', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 02:22:10 web:1811] 500 GET / (182.92.158.67) 1.38ms
+[E 140728 03:11:53 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '171.214.20.114', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 03:11:53 web:1811] 500 GET / (182.92.158.67) 1.09ms
+[E 140728 04:51:34 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '190.163.93.21', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 04:51:34 web:1811] 500 GET / (182.92.158.67) 1.15ms
+[E 140728 05:14:32 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '58.54.142.147', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 05:14:32 web:1811] 500 GET / (182.92.158.67) 0.87ms
+[E 140728 05:21:47 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '111.113.148.1', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 05:21:47 web:1811] 500 GET / (182.92.158.67) 1.35ms
+[E 140728 05:23:44 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '182.131.187.167', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 05:23:44 web:1811] 500 GET / (182.92.158.67) 1.39ms
+[E 140728 05:57:46 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '114.104.96.196', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 05:57:46 web:1811] 500 GET / (182.92.158.67) 1.10ms
+[E 140728 06:06:44 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '182.244.121.191', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 06:06:44 web:1811] 500 GET / (182.92.158.67) 1.38ms
+[E 140728 07:21:50 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '213.92.159.112', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 07:21:50 web:1811] 500 GET / (182.92.158.67) 1.09ms
+[E 140728 07:35:40 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '222.242.189.219', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 07:35:40 web:1811] 500 GET / (182.92.158.67) 1.07ms
+[E 140728 08:04:32 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '180.137.153.109', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 08:04:32 web:1811] 500 GET / (182.92.158.67) 1.36ms
+[E 140728 08:06:30 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '111.181.151.0', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 08:06:30 web:1811] 500 GET / (182.92.158.67) 1.02ms
+[I 140728 09:34:23 web:1811] 200 GET / (182.92.158.67) 1.44ms
+[I 140728 09:35:59 web:1811] 200 GET /picky/links (182.92.158.67) 2.04ms
+[I 140728 09:36:42 web:1811] 200 GET /picky/all (182.92.158.67) 1.64ms
+[I 140728 09:36:49 web:1811] 304 GET /picky/all (182.92.158.67) 1.84ms
+[E 140728 09:38:38 web:1407] Uncaught exception GET / (182.92.158.67)
+    HTTPServerRequest(protocol='http', host='182.92.158.67', method='GET', uri='/', version='HTTP/1.0', remote_ip='182.92.158.67', headers={'X-Real-Ip': '120.69.225.250', 'Host': '182.92.158.67', 'X-Scheme': 'http', 'Connection': 'close'})
+    Traceback (most recent call last):
+      File "/root/env/lib/python2.6/site-packages/tornado/web.py", line 1309, in _execute
+        result = self.prepare()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 26, in prepare
+        self._prepare_context()
+      File "/root/jingshenbing/miniakio/libs/handler.py", line 80, in _prepare_context
+        self._context.is_mobile = is_mobile(self.request.headers['User-Agent'])
+      File "/root/env/lib/python2.6/site-packages/tornado/httputil.py", line 209, in __getitem__
+        return dict.__getitem__(self, _normalized_headers[name])
+    KeyError: 'User-Agent'
+[E 140728 09:38:38 web:1811] 500 GET / (182.92.158.67) 2.24ms
+[I 140728 09:39:47 web:1811] 200 GET / (182.92.158.67) 1.46ms
+[I 140728 09:55:27 web:1811] 200 GET /picky/about-me (182.92.158.67) 2.48ms
+[I 140728 09:56:50 web:1811] 304 GET /picky/all (182.92.158.67) 1.45ms
+[I 140728 10:08:13 web:1811] 200 GET /blog/all (182.92.158.67) 1.30ms
+[I 140728 10:08:15 web:1811] 304 GET /picky/links (182.92.158.67) 1.84ms
+[I 140728 10:08:18 web:1811] 304 GET /picky/all (182.92.158.67) 1.44ms
+[I 140728 10:08:18 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.68ms
+[I 140728 10:08:22 web:1811] 304 GET /blog/all (182.92.158.67) 1.21ms
+[I 140728 10:09:02 web:1811] 304 GET /picky/about-me (182.92.158.67) 1.98ms
+[I 140728 10:24:38 web:1811] 200 GET / (182.92.158.67) 1.07ms
+[I 140728 10:24:38 web:1811] 200 GET / (182.92.158.67) 0.83ms
+[I 140728 10:29:14 web:1811] 304 GET /picky/all (182.92.158.67) 1.41ms
+[I 140728 10:29:16 web:1811] 304 GET /picky/links (182.92.158.67) 1.77ms

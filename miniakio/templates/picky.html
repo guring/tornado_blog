@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{post["title"]}} - I'm Sanyang{% end %}
+{% block head %}{{strip_tags(post["content"][0:168])}}{% end %}
+{% block content %}
+<article>
+    <h2 class="content-title"><a href="/picky/{{slug}}">{{post["title"]}}</a></h2>
+    {{post["content"]}}
+</article>
+
+<div id="SOHUCS" sid="{{slug}}"></div>
+<script>
+  (function(){
+    var appid = 'cyrA8Yt8P',
+    conf = 'prod_cf9b6e962057e4a4e9e04bd8bab83115';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
+</script>
+
+    <hr>
+    <blockquote>
+      <small> {{post["published"]}}
+        <a href="/picky/{{slug}}.md" title="{{post["title"]}}">Down Markdown File</a>
+      </small>
+    </blockquote>
+{% end %}
